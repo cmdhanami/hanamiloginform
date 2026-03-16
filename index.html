@@ -1,0 +1,205 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width", initial-scale=1.0/>
+    
+   
+    <title>Login</title>
+    
+    </head>
+<body>
+    
+    <table>
+      <tr>
+          <td>
+    <h1 > Login</h1>
+             
+    <form>
+            
+    <label for="username">Username:</label><br/>
+    <input type="text" id="username" name="username" placeholder="Enter username"/><br/>
+<br/>    
+    
+      <label for="password">Password:</label><br/>
+    <input type="text" id="password" name="password" placeholder="Enter password"/><br/>
+        
+<br/>    
+    
+    
+    <input type="checkbox" id="remember" name="remember"/>   
+<label for="remember">Remember me</label><br/><br/>
+    
+    <button type="button"id="button1"  onclick="checkLogin()"> Submit </button>
+    <button type="button" id="button2" onclick="clearForm()"> Cancel </button>
+         </form>
+              <p id="error-message" style="color:red; display:none;">
+Invalid username or password!
+</p>
+                  </td>
+
+  </tr>
+     
+  
+    </table>
+     <!----------------CSS DESIGN------------------------------->
+    <style>
+    
+    
+    
+    /*page backgroun design*/
+        body{
+            
+            background-color: lightgoldenrodyellow;
+        }
+    
+        /*form design*/
+     
+        form{
+            
+            padding:50px;
+        }
+        /* table design*/
+    table {
+    width: 15%;
+    margin: 60px auto;
+    border: 5px solid deeppink;
+    border-radius: 25px;
+    background-color: lightpink;
+    padding: 50px;
+         text-align: left;
+        object-position: center;
+        
+        
+        }
+        /*submit button design*/
+        #button1{
+            padding:10px;
+            border-radius: 10px;
+            background-color: lightgreen;
+             margin-left:10px;
+        }
+        /* cancel button design*/
+         #button2{
+            padding:10px;
+            border-radius: 10px;
+            background-color: darkgrey;
+              margin-right: 10px;
+            
+        }
+        
+     /* submit button hover*/
+        #button1:hover{
+             padding:10px;
+            border-radius: 10px;
+            background-color: blue;
+             margin-left:10px;
+             
+        }
+        
+        /* h1 design*/
+        H1{
+            text-align:center
+        }
+        /* cancel button hover*/
+        #button2:hover{
+            padding:10px;
+            border-radius: 10px;
+            background-color: red;
+             margin-right: 10px;
+            /*         hover             */
+        }
+        /* textbox design*/
+        #username{
+            border-radius: 8px;
+            background-color: lightpink;
+           
+        }
+        /*textbox password design*/
+        #password{
+             border-radius: 8px;
+            background-color: lightpink;
+            
+            
+        }
+        p{
+            text-align:center;
+        }
+    </style>
+    
+    
+    <script>
+    /*step 1:Set your correct username and password*/
+    var correctUsername = "hanami";
+    var correctPassword = "123456";
+    /*step 2:This function run when you clicked submit*/
+    function checkLogin() {
+        /*Read whatever the user typed into each field*/
+       var enteredUsername = document.getElementById("username").value;
+       var enteredPassword = document.getElementById("password").value;
+        
+        // compare what the user typed withthe correct values
+        if (enteredUsername === correctUsername && enteredPassword === correctPassword) {
+            //if its correct then it will...
+            window.location.href ="abtme.html";
+            
+        }else {
+            
+            document.getElementById("error-message").style.display = "block";
+        }
+        
+    }
+        //step 3: cancel button clears the form
+        function clearForm() {
+            document.getElementById("username").value = "" ;
+            document.getElementsById("password").value = "" ;
+            document.getElementsById("error-message").style.display = "none";
+            
+        }
+        
+        
+        
+        
+        
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+    
+    
+    
+    
+    
+    
+    
+    
+    </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
