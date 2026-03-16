@@ -1,5 +1,5 @@
 
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width", initial-scale=1.0/>
@@ -50,7 +50,7 @@ Invalid username or password!
     /*page backgroun design*/
         body{
             
-            background-color: lightgoldenrodyellow;
+            background-image: url('обои💞.jpg')
         }
     
         /*form design*/
@@ -63,20 +63,20 @@ Invalid username or password!
     table {
     width: 15%;
     margin: 60px auto;
-    border: 5px solid deeppink;
-    border-radius: 25px;
-    background-color: lightpink;
+   
+    border-radius: 50px;
+    background-color: white;
     padding: 50px;
          text-align: left;
         object-position: center;
-        
-        
+        box-shadow: 5px 5px 10px gray;
+        border: 10px solid deeppink;
         }
         /*submit button design*/
         #button1{
             padding:10px;
             border-radius: 10px;
-            background-color: lightgreen;
+            background-color: lightpink;
              margin-left:10px;
         }
         /* cancel button design*/
@@ -92,7 +92,7 @@ Invalid username or password!
         #button1:hover{
              padding:10px;
             border-radius: 10px;
-            background-color: blue;
+            background-color: lightgrey;
              margin-left:10px;
              
         }
@@ -105,20 +105,20 @@ Invalid username or password!
         #button2:hover{
             padding:10px;
             border-radius: 10px;
-            background-color: red;
+            background-color: lightgrey;
              margin-right: 10px;
             /*         hover             */
         }
         /* textbox design*/
         #username{
             border-radius: 8px;
-            background-color: lightpink;
+            background-color: white;
            
         }
         /*textbox password design*/
         #password{
              border-radius: 8px;
-            background-color: lightpink;
+            background-color: white;
             
             
         }
@@ -130,8 +130,8 @@ Invalid username or password!
     
     <script>
     /*step 1:Set your correct username and password*/
-    var correctUsername = "hanami";
-    var correctPassword = "123456";
+    var correctUsername = "admin";
+    var correctPassword = "1234";
     /*step 2:This function run when you clicked submit*/
     function checkLogin() {
         /*Read whatever the user typed into each field*/
